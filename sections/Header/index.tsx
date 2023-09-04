@@ -6,7 +6,7 @@ import Image from 'next/image'
 const Header = () => {
   return (
     <div>
-      <section className="h-auto bg-white overflow-hidden">
+      <section className="h-auto bg-[#f9f8f5] overflow-hidden">
         <div className="w-full bg-black relative z-20 font-medium text-sm h-10 text-left flex items-center text-white">
           <div className="max-w-2xl mx-auto text-left">
             <span className="md:-ml-10">
@@ -24,15 +24,7 @@ const Header = () => {
               </a>
             </Link>
           </div>
-          <div className="absolute sm:relative w-full px-10 left-0 sm:mt-0 mt-32">
-            <form className="relative w-full max-w-3xl mx-auto">
-              <input
-                type="text"
-                className="h-auto px-5 py-2 cursor-pointer hover:bg-gray-200 text-sm w-full bg-gray-100 rounded-full"
-                placeholder="Search for Anything"
-              />
-            </form>
-          </div>
+
           <div className="relative flex space-x-5 font-medium">
             <Link href="/resources/create" passHref>
               <button
@@ -45,13 +37,22 @@ const Header = () => {
             </Link>
           </div>
         </div>
-        <div className="container pt-16 mx-auto text-left md:text-center">
-          <div className="relative max-w-4xl mx-auto">
-            <h1 className="pb-2 text-4xl font-extrabold text-left text-transparent sm:text-5xl sm:text-6xl md:text-7xl md:text-center bg-clip-text bg-gradient-to-r from-indigo-600 via-blue-500 to-green-400">
-              Marketplace de Roupas e Acessórios
+        <section className="h-auto bg-[#f9f8f5] py-16 sm:py-20 px-10">
+          <div className="md:text-center max-w-7xl mx-auto">
+            <h1 className="font-thin text-6xl lg:text-7xl xl:text-8xl mt-10">
+              Explore um Mundo de Possibilidades no Nosso Marketplace!
             </h1>
+            <div className="w-full md:block hidden max-w-7xl h-px bg-gradient-to-r my-5 from-white via-gray-300 to-white mx-auto"></div>
+            <div className="w-full md:hidden block max-w-7xl h-px bg-gradient-to-r my-5 from-gray-300 to-white mx-auto"></div>
+            <p className="font-light text-gray-500 text-base md:max-w-md mx-auto lg:max-w-none xl:text-xl">
+              O seu destino número um para todas as suas necessidades de compras
+              online. Aqui, reunimos uma vasta seleção de produtos de alta
+              qualidade, das melhores marcas e vendedores confiáveis, para
+              tornar a sua experiência de compra simples, conveniente e
+              empolgante.
+            </p>
           </div>
-        </div>
+        </section>
       </section>
     </div>
   )

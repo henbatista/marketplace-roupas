@@ -83,7 +83,7 @@ const Header = () => {
           </a>
         </div>
         <p className="mt-8 text-base leading-6 text-center text-gray-400">
-          &copy; 2021 SomeCompany, Inc. All rights reserved.
+          &copy; 2023 Wellington Henrique Batista, Inc. All rights reserved.
         </p>
       </div>
     </section>
