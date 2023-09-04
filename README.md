@@ -8,44 +8,51 @@ Filtro por categoria de produto.
 Design inspirado na imagem da Nike.
 
 ## Header
-<img width="907" alt="image" src="https://github.com/henbatista/marketplace-roupas/assets/85231417/46d5e603-c907-4555-8e10-cba22f110fc7">
 
+<img width="907" alt="image" src="https://github.com/henbatista/marketplace-roupas/assets/85231417/46d5e603-c907-4555-8e10-cba22f110fc7">
 
 `Cadastro de novo item`
 
 ## body
+
 <img width="894" alt="image" src="https://github.com/henbatista/marketplace-roupas/assets/85231417/adff9169-f3d4-47f3-b9c8-50a41c0744ef">
 
-
 ## Filter
+
 <img width="864" alt="image" src="https://github.com/henbatista/marketplace-roupas/assets/85231417/e1519d69-b44a-49fa-a606-ad78811350db">
 
-
 ## Modal
+
 <img width="880" alt="image" src="https://github.com/henbatista/marketplace-roupas/assets/85231417/e5be48ac-cce6-4c8a-abe3-1b6d63d80280">
 
-
 ## Novo item
-<img width="421" alt="image" src="https://github.com/henbatista/marketplace-roupas/assets/85231417/51e25f4c-4dd3-4bd1-955e-0b587f65b05f">
 
+<img width="421" alt="image" src="https://github.com/henbatista/marketplace-roupas/assets/85231417/51e25f4c-4dd3-4bd1-955e-0b587f65b05f">
 
 ## Instruções de Uso
 
 Clone este repositório:
+
 ```bash
 gh repo clone henbatista/marketplace-roupas
 ```
+
 Instale as dependências:
+
 ```bash
 npm install
 ```
+
 Inicie a aplicação:
+
 ```bash
 npm run dev
 ```
+
 Abra o navegador e acesse http://localhost:3000 para visualizar a aplicação.
 
 ## Bibliotecas Utilizadas
+
 React.js
 Next.js
 Prisma
@@ -73,5 +80,3 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-
