@@ -1,4 +1,20 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+## Header
+<img width="905" alt="image" src="https://github.com/henbatista/marketplace-roupas/assets/85231417/976e688b-9ba4-4177-bfd9-ef05df575af5">
+
+`Cadastro de novo item`
+
+## body
+<img width="901" alt="image" src="https://github.com/henbatista/marketplace-roupas/assets/85231417/1b33ff81-a1f0-4952-a1b2-f4f07ab4d048">
+
+## Filter
+<img width="910" alt="image" src="https://github.com/henbatista/marketplace-roupas/assets/85231417/f8f7c191-461f-4836-a642-183d42ea9ad7">
+
+## Modal
+<img width="897" alt="image" src="https://github.com/henbatista/marketplace-roupas/assets/85231417/55234d4f-d5bb-41d8-843f-4223ccbde03c">
+
+## Novo item
+<img width="893" alt="image" src="https://github.com/henbatista/marketplace-roupas/assets/85231417/19a2633b-bf80-4476-ac81-eab14120f719">
 
 ## Getting Started
 
