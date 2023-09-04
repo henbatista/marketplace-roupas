@@ -53,16 +53,16 @@ Abra o navegador e acesse http://localhost:3000 para visualizar a aplicação.
 
 ## Bibliotecas Utilizadas
 
-React.js
-Next.js
-Prisma
-Supabase
-Tailwindcss
-Dotenv
-Bootstrap
-Nanoid
-Base64
-Axios
+React.js<br>
+Next.js<br>
+Prisma<br>
+Supabase<br>
+Tailwindcss<br>
+Dotenv<br>
+Bootstrap<br>
+Nanoid<br>
+Base64<br>
+Axios<br>
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
