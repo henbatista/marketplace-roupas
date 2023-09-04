@@ -8,21 +8,26 @@ Filtro por categoria de produto.
 Design inspirado na imagem da Nike.
 
 ## Header
-<img width="905" alt="image" src="https://github.com/henbatista/marketplace-roupas/assets/85231417/976e688b-9ba4-4177-bfd9-ef05df575af5">
+<img width="907" alt="image" src="https://github.com/henbatista/marketplace-roupas/assets/85231417/46d5e603-c907-4555-8e10-cba22f110fc7">
+
 
 `Cadastro de novo item`
 
 ## body
-<img width="901" alt="image" src="https://github.com/henbatista/marketplace-roupas/assets/85231417/1b33ff81-a1f0-4952-a1b2-f4f07ab4d048">
+<img width="894" alt="image" src="https://github.com/henbatista/marketplace-roupas/assets/85231417/adff9169-f3d4-47f3-b9c8-50a41c0744ef">
+
 
 ## Filter
-<img width="910" alt="image" src="https://github.com/henbatista/marketplace-roupas/assets/85231417/f8f7c191-461f-4836-a642-183d42ea9ad7">
+<img width="864" alt="image" src="https://github.com/henbatista/marketplace-roupas/assets/85231417/e1519d69-b44a-49fa-a606-ad78811350db">
+
 
 ## Modal
-<img width="897" alt="image" src="https://github.com/henbatista/marketplace-roupas/assets/85231417/55234d4f-d5bb-41d8-843f-4223ccbde03c">
+<img width="880" alt="image" src="https://github.com/henbatista/marketplace-roupas/assets/85231417/e5be48ac-cce6-4c8a-abe3-1b6d63d80280">
+
 
 ## Novo item
-<img width="893" alt="image" src="https://github.com/henbatista/marketplace-roupas/assets/85231417/19a2633b-bf80-4476-ac81-eab14120f719">
+<img width="421" alt="image" src="https://github.com/henbatista/marketplace-roupas/assets/85231417/51e25f4c-4dd3-4bd1-955e-0b587f65b05f">
+
 
 ## Instruções de Uso
 
