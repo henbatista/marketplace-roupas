@@ -64,6 +64,45 @@ Nanoid<br>
 Base64<br>
 Axios<br>
 
+## Bibliotecas Utilizadas
+
+src/
+|-- components/
+|------ |-- Logo/
+|------------ |-- index.tsx
+|------ |-- Resource/
+|------------ |-- index.tsx
+|------ |-- ResourceGrid/
+|------------ |-- index.tsx
+|-- lib/
+|--- |-- prisma.ts
+|-- pages/
+|---- |-- api/
+|--------- |---resources/
+|------------------ |--- [id].tsx
+|------------------ |--- index.tsx
+|---- |--- resources/
+|-------------- |--- [id]/
+|------------------ |--- update.tsx
+|------------------ |--- index.tsx
+|-------------- |--- create.tsx
+|---- |--- app.tsx
+|---- |--- index.tsx
+|-- prisma/
+|---- |-- migration/
+|---- |-- schema.prisma
+|-- public/
+|------ |-- logo.pmg
+|-- sections/
+|---- |-- Footer/
+|--------- |---index.tsx/
+|---- |-- Header/
+|--------- |---index.tsx/
+|---- |-- Layout/
+|--------- |---index.tsx/
+|-- style/
+|----- |-- globals.css
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
