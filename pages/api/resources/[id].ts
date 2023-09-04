@@ -28,7 +28,7 @@ const SUPABASE_URL = process.env.SUPABASE_URL
 const SUPABASE_KEY = process.env.SUPABASE_PUBLIC_KEY
 
 if (!SUPABASE_URL || !SUPABASE_KEY) {
-  throw new Error('There is no supabase config on ENV')
+  throw new Error('Há algo de errado com a configuração do supabase')
 }
 
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
@@ -41,7 +41,7 @@ export default async function handler(
     res.setHeader('Allow', ['PUT'])
     return res
       .status(405)
-      .json({ message: `HTTP method ${req.method} is not allowed` })
+      .json({ message: `Metodo ${req.method} não permitido` })
   }
 
   try {
@@ -58,13 +58,13 @@ export default async function handler(
       !data.sport
     ) {
       return res.status(422).json({
-        message: `Properties title, description and link are required`
+        message: `As propriedades 'name', 'details', 'image_url', 'type', 'price', 'seller', 'available_sizes' e 'sport' são obrigatórias`
       })
     }
 
     if (!req.query.id) {
       return res.status(404).json({
-        message: 'Resource not found'
+        message: 'Não encontrado'
       })
     }
 
@@ -74,7 +74,7 @@ export default async function handler(
     })
     if (!existingResource) {
       return res.status(404).json({
-        message: 'Resource not found'
+        message: 'Recurso não encontrado'
       })
     }
 
@@ -92,7 +92,7 @@ export default async function handler(
     if (image_url) {
       const SUPABASE_BUCKET = process.env.SUPABASE_PUBLIC_BUCKET
       if (!SUPABASE_BUCKET) {
-        throw new Error('There is no supabase config on ENV')
+        throw new Error('Há algo de errado com a configuração do supabase')
       }
 
       const contentTypeMatches = image_url.match(/data:(.*);base64/)
@@ -100,7 +100,7 @@ export default async function handler(
 
       if (!contentTypeMatches || !imageStringWithoutBase64) {
         return res.status(422).json({
-          message: 'Your file is invalid'
+          message: 'Seu arquivo é invalido'
         })
       }
 
@@ -108,7 +108,7 @@ export default async function handler(
       const [fileType, fileExtension] = contentType.split('/')
       if (fileType !== 'image') {
         return res.status(422).json({
-          message: 'Only images are accepted'
+          message: 'Apenas imagens são aceitas'
         })
       }
 
@@ -125,7 +125,7 @@ export default async function handler(
 
       if (storageError || !storageData) {
         return res.status(500).json({
-          message: 'Something went wrong with the image upload'
+          message: 'Algo de errado ocorreu com o upload da imagem'
         })
       }
 
@@ -135,7 +135,7 @@ export default async function handler(
 
       if (!publicURL) {
         return res.status(500).json({
-          message: 'Something went wrong with the image upload'
+          message: 'Algo de errado ocorreu com o upload da imagem'
         })
       }
 
@@ -169,11 +169,11 @@ export default async function handler(
     }
 
     res.status(200).send({
-      message: 'Resource updated successfully'
+      message: 'Criado com sucesso  '
     })
   } catch (error) {
     res.status(500).send({
-      message: 'Something went wrong'
+      message: 'Ocorreu um erro ao criar o recurso'
     })
   }
 }
