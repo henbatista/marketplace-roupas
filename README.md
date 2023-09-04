@@ -66,42 +66,42 @@ Axios<br>
 
 ## Bibliotecas Utilizadas
 
-src/
-|-- components/
-|------ |-- Logo/
-|------------ |-- index.tsx
-|------ |-- Resource/
-|------------ |-- index.tsx
-|------ |-- ResourceGrid/
-|------------ |-- index.tsx
-|-- lib/
-|--- |-- prisma.ts
-|-- pages/
-|---- |-- api/
-|--------- |---resources/
-|------------------ |--- [id].tsx
-|------------------ |--- index.tsx
-|---- |--- resources/
-|-------------- |--- [id]/
-|------------------ |--- update.tsx
-|------------------ |--- index.tsx
-|-------------- |--- create.tsx
-|---- |--- app.tsx
-|---- |--- index.tsx
-|-- prisma/
-|---- |-- migration/
-|---- |-- schema.prisma
-|-- public/
-|------ |-- logo.pmg
-|-- sections/
-|---- |-- Footer/
-|--------- |---index.tsx/
-|---- |-- Header/
-|--------- |---index.tsx/
-|---- |-- Layout/
-|--------- |---index.tsx/
-|-- style/
-|----- |-- globals.css
+src/<br>
+|-- components/<br>
+|------ |-- Logo/<br>
+|------------ |-- index.tsx<br>
+|------ |-- Resource/<br>
+|------------ |-- index.tsx<br>
+|------ |-- ResourceGrid/<br>
+|------------ |-- index.tsx<br>
+|-- lib/<br>
+|--- |-- prisma.ts<br>
+|-- pages/<br>
+|---- |-- api/<br>
+|--------- |---resources/<br>
+|------------------ |--- [id].tsx<br>
+|------------------ |--- index.tsx<br>
+|---- |--- resources/<br>
+|-------------- |--- [id]/<br>
+|------------------ |--- update.tsx<br>
+|------------------ |--- index.tsx<br>
+|-------------- |--- create.tsx<br>
+|---- |--- app.tsx<br>
+|---- |--- index.tsxv
+|-- prisma/<br>
+|---- |-- migration/<br>
+|---- |-- schema.prisma<br>
+|-- public/<br>
+|------ |-- logo.pmg<br>
+|-- sections/<br>
+|---- |-- Footer/<br>
+|--------- |---index.tsx/<br>
+|---- |-- Header/<br>
+|--------- |---index.tsx/<br>
+|---- |-- Layout/<br>
+|--------- |---index.tsx/<br>
+|-- style/<br>
+|----- |-- globals.css<br>
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
