@@ -64,8 +64,7 @@ Nanoid<br>
 Base64<br>
 Axios<br>
 
-## Bibliotecas Utilizadas
-
+## Estrutura do Projeto
 src/<br>
 |-- components/<br>
 |------ |-- Logo/<br>
