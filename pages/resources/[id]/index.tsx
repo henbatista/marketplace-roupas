@@ -66,14 +66,6 @@ const ViewResource: NextPage<StaticProps> = ({ resource = null }) => {
               Update
             </a>
           </Link>
-          <a
-            href={resource.sport}
-            target="_blank"
-            rel="noreferrer"
-            className="px-6 py-3 bg-sky-700 text-white rounded-lg outline-none focus:outline-offset-0 focus:outline-sky-300 focus:outline-[3px] transition-all"
-          >
-            Visit
-          </a>
         </div>
       </div>
     </Layout>
