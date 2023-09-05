@@ -130,7 +130,7 @@ const CreateResource: NextPage = () => {
         </div>
         <div className="w-full flex flex-col gap-2 mb-6">
           <Form.Group as={Col} md="4" controlId="validationFormik01">
-            <Form.Label>Nome do Produto</Form.Label>
+            <Form.Label>Valor do Produto</Form.Label>
             <Form.Control
               type="number"
               name="price"
@@ -141,19 +141,7 @@ const CreateResource: NextPage = () => {
             <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
           </Form.Group>
         </div>
-        <div className="w-full flex flex-col gap-2 mb-6">
-          <Form.Group as={Col} md="4" controlId="validationFormik01">
-            <Form.Label>Nome do Produto</Form.Label>
-            <Form.Control
-              type="text"
-              name="name"
-              value={formData.name}
-              required
-              onChange={handleChange}
-            />
-            <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-          </Form.Group>
-        </div>
+
         <div className="w-full flex flex-col gap-2 mb-6">
           <Form.Group as={Col} md="4" controlId="validationFormik01">
             <Form.Label>Tipo do produto</Form.Label>
