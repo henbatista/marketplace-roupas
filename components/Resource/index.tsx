@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Link from 'next/link'
+
 import React, { useState } from 'react'
 import { Button, Modal } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -39,23 +39,20 @@ const Resource = ({
 
   return (
     <div>
-      <Link href={`/resources/${id}`} passHref>
-        <a className="w-full max-w-xs">
-          <div className="flex flex-col gap-2">
-            <div className="card-img-top justify-items-center items-center">
-              <Image
-                src={image_url}
-                alt={name}
-                className=" justify-items-center items-center"
-                width="250px"
-                height="250px"
-              />
-            </div>
-            <span className="text-xl font-bold">{name}</span>
-            <p className="text-base">{price}</p>
-          </div>
-        </a>
-      </Link>
+      <div className="flex flex-col gap-2">
+        <div className="card-img-top justify-items-center items-center">
+          <Image
+            src={image_url}
+            alt={name}
+            className=" justify-items-center items-center"
+            width="250px"
+            height="250px"
+          />
+        </div>
+        <span className="text-xl font-bold">{name}</span>
+        <p className="text-base">{price}</p>
+      </div>
+
       <Button variant="primary" onClick={openModal}>
         Ver Detalhes
       </Button>

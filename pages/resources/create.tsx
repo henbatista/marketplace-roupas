@@ -6,9 +6,6 @@ import Layout from '../../sections/Layout'
 import { Form } from 'react-bootstrap'
 import Col from 'react-bootstrap/Col'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Button from 'react-bootstrap/Button'
-import InputGroup from 'react-bootstrap/InputGroup'
-import Row from 'react-bootstrap/Row'
 
 type FormData = {
   name: string
@@ -56,7 +53,7 @@ const CreateResource: NextPage = () => {
   async function handleAddResource(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
 
-    toast.promise(axios.post('/api/resources', formData), {
+    toast.promise(axios.post('/api/resources/create', formData), {
       loading: 'Carregando...',
       success: () => {
         setFormData({

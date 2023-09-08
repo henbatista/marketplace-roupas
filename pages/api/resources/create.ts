@@ -46,16 +46,7 @@ export default async function handler(
 
   try {
     const data = req.body
-    if (
-      !data.name ||
-      !data.details ||
-      !data.image_url ||
-      !data.type ||
-      !data.price ||
-      !data.seller ||
-      !data.available_sizes ||
-      !data.sport
-    ) {
+    if (!data.name) {
       return res.status(422).json({
         message: `Todas as propriedades são obrigatórias`
       })
@@ -70,9 +61,18 @@ export default async function handler(
       seller,
       available_sizes,
       sport
-    } = data as ResourceBody
+    } = data as {
+      name: string
+      details: string
+      price: number
+      type: string
+      image_url: string
+      seller: string
+      available_sizes: string
+      sport: string
+    }
 
-    const SUPABASE_BUCKET = process.env.SUPABASE_PUBLIC_BUCKET
+    const SUPABASE_BUCKET = process.env.SUPABASE_PUBLIC_BUCKET || 'publicFile'
     if (!SUPABASE_BUCKET) {
       throw new Error('O Supabase não está configurado corretamente')
     }
@@ -80,9 +80,14 @@ export default async function handler(
     const contentTypeMatches = image_url.match(/data:(.*);base64/)
     const imageStringWithoutBase64 = image_url.split('base64,')
 
-    if (!contentTypeMatches || !imageStringWithoutBase64) {
+    if (
+      !contentTypeMatches ||
+      contentTypeMatches.length < 2 ||
+      !imageStringWithoutBase64 ||
+      imageStringWithoutBase64.length < 2
+    ) {
       return res.status(422).json({
-        message: 'Seu Arquivo é invalido'
+        message: 'Seu Arquivo é inválido'
       })
     }
 
@@ -112,7 +117,7 @@ export default async function handler(
       })
     }
 
-    const { publicURL } = supabase.storage
+    const publicURL = supabase.storage
       .from(SUPABASE_BUCKET)
       .getPublicUrl(filepath)
 
@@ -128,7 +133,7 @@ export default async function handler(
         details,
         type,
         price,
-        image_url: publicURL,
+        image_url,
         seller,
         available_sizes,
         sport
